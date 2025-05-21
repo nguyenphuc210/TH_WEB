@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Employee Profile Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        max-width: 600px;
+      }
+      label {
+        display: inline-block;
+        width: 150px;
+        font-weight: bold;
+      }
+      hr {
+        margin: 0px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+      }
+      h3 {
+        margin-bottom: 0;
+      }
+      input[type="text"],
+      select {
+        width: 300px;
+        padding: 5px;
+        margin: 5px 0;
+      }
+      input[type="radio"] {
+        margin: 5px 5px 5px 10px;
+      }
+      .form-section {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-section">
+      <h3>Basic Infor</h3>
+      <hr />
+      <form action="">
+        <ul>
+          <div style="margin: 10px 0"><label>Employee ID</label> 9</div>
+
+          <div style="margin: 10px 0"><label> Last Name</label> Dodsworth</div>
+
+          <div style="margin: 10px 0">
+            <label> First Name</label>
+            <input type="text" value="Anne" style="width: 300px" />
+          </div>
+
+          <div style="margin: 10px 0">
+            <label><strong>Gender</strong></label>
+
+            <input type="radio" value="Male" /> Male
+            <br />
+
+            <input
+              type="radio"
+              value="Female"
+              style="margin-left: 160px"
+            />Female
+            <br />
+
+            <input type="radio" value="XXX" style="margin-left: 160px" />XXX
+            <br />
+
+            <input type="radio" value="ZZZ" style="margin-left: 160px" />ZZZ
+          </div>
+
+          <div style="margin: 10px 0">
+            <label>Title</label>
+            <input
+              type="text"
+              value="Sales Respresentative"
+              style="width: 300px"
+            />
+          </div>
+
+          <div style="margin: 10px 0">
+            <label>Suffix</label>
+            <input type="text" value="Ms." style="width: 300px" />
+          </div>
+
+          <div style="margin: 10px 0">
+            <label>BirthDate</label>
+            <input
+              type="text"
+              value="1969-07-02 00:00:00"
+              style="width: 300px"
+            />
+          </div>
+
+          <div style="margin: 10px 0">
+            <label>HireDate</label>
+            <input
+              type="text"
+              value="1994-11-15 00:00:00"
+              style="width: 300px"
+            />
+          </div>
+
+          <div style="margin: 10px 0">
+            <label>SSN #(if applicable)</label>
+            <input type="text" style="width: 300px" />
+          </div>
+
+          <div style="margin: 10px 0">
+            <label for="Reports to">Reports To</label>
+            <select name="Reports to" id="Reports to" style="width: 100px">
+              <option value="Buchana">Buchana</option>
+              <option value="VietNam">VietNam</option>
+            </select>
+          </div>
+        </ul>
+      </form>
+    </div>
+
+    <div class="form-section">
+      <h3>Contact Infor</h3>
+      <hr />
+      <form action="">
+        <ul>
+          <div style="margin: 10px 0">
+            <label>Email</label>
+            <input
+              type="email"
+              placeholder="name@example.com"
+              style="width: 300px"
+            />
+          </div>
+
+          <div style="margin: 10px 0">
+            <label>Address</label>
+            <input type="text" value="7 Houndstooth Rd." />
+          </div>
+          <div style="margin: 10px 0">
+            <label>City</label>
+            <input type="text" value="London" />
+          </div>
+
+          <div style="margin: 10px 0">
+            <label>Region</label>
+            <input type="text" />
+          </div>
+
+          <div style="margin: 10px 0">
+            <label>Postal Code</label>
+            <input type="text" value="WG2 7LT" />
+          </div>
+
+          <div style="margin: 10px 0">
+            <label>Country</label>
+            <select name="Country" id="Country">
+              <option value="Country">Russian Federation</option>
+              <option value="Country">VietNam</option>
+            </select>
+          </div>
+
+          <div style="margin: 10px 0">
+            <label>US Home Phone</label>
+            <input type="text" value="(234)234-2342" />
+          </div>
+
+          <div style="margin: 10px 0">
+            <label>Photo</label>
+            <input type="text" value="EmpID9.bmp" />
+          </div>
+        </ul>
+      </form>
+    </div>
+
+    <div class="form-section">
+      <h3>Optional Infor</h3>
+      <hr />
+
+      <ul>
+        <div style="margin: 10px 0">
+          <label>Notes</label>
+          <textarea style="width: 300px; height: 100px"></textarea>
+        </div>
+
+        <div style="margin: 10px 0">
+          <label>Prefered Shift</label>
+          <input type="checkbox" value="Regular" />Regular
+          <br />
+          <input
+            type="checkbox"
+            value="Gravy Yard"
+            style="margin-left: 158px"
+          />Gravy Yard
+        </div>
+        <div style="margin: 10px 0">
+          <label>Active?</label>
+          <input type="checkbox" value="" />
+        </div>
+
+        <div style="margin: 10px 0">
+          <label>Are you human?</label>
+          <div class="captcha-text" style="margin-left: 160px">TIDAWO</div>
+        </div>
+      </ul>
+    </div>
+  </body>
+</html>
