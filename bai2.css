@@ -1,0 +1,126 @@
+/* styles.css */
+header {
+  background-color: #460546;
+  color: white;
+  padding: 1rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#page-logo a {
+  font-family: "Oleo Script", cursive;
+  font-size: 2rem;
+  color: #fcd34d;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: #fcd34d;
+}
+
+nav a:hover {
+  color: #facc15;
+}
+
+#hero {
+  background-image: url("images/places/ocean.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+}
+
+#hero-content {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#hero-content h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+#hero-content a {
+  background-color: #facc15;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  color: black;
+  font-weight: bold;
+}
+
+#highlights {
+  background-color: #ccfbf1;
+  padding: 3rem 10%;
+  text-align: center;
+}
+
+#highlights h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#destinations {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.destination {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.destination:hover {
+  transform: scale(1.05);
+}
+
+.destination img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.destination p {
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+footer {
+  background-color: black;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+}
